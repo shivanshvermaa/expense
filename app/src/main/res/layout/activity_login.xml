@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".Login">
 
 
     <EditText
-        android:id="@+id/login_email_edittext"
+        android:id="@+id/login_mail_edittext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:inputType="textEmailAddress"
         android:layout_marginBottom="8dp"
         android:ems="12"
-        android:hint="someone@email.com"
+        android:hint="someone@example.com"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
-        android:imeOptions="actionDone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

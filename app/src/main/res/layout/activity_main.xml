@@ -199,6 +199,22 @@
         app:layout_constraintVertical_bias="0.644" />
 
     <Button
+        android:id="@+id/main_expense_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <Button
         android:id="@+id/main_expense_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -248,6 +264,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.814" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
