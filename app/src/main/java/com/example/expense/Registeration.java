@@ -26,6 +26,7 @@ public class Registeration extends AppCompatActivity {
         password = findViewById(R.id.reg_pass_edittext);
         passwordconfirm = findViewById(R.id.reg_passconf_edittext);
 
+        //Some data
 
     }
 }
