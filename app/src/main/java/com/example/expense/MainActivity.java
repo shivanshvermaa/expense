@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button addExpense ;
+    Button logout;
 
     EditText amount;
     EditText notes;
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     ToggleButton togglePersonal ;
     ToggleButton toggleLend ;
     ToggleButton toggleMisc;
+
     DatabaseReference transactionDatabase;
 
 
@@ -63,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         togglePersonal = (ToggleButton)findViewById(R.id.main_expense_personal);
         toggleLend = (ToggleButton)findViewById(R.id.main_expense_lend);
         toggleMisc = (ToggleButton)findViewById(R.id.main_expense_misc);
+        logout = (Button)findViewById(R.id.main_expense_logout);
 
         transactionDatabase = FirebaseDatabase.getInstance().getReference("transactions");
 
@@ -132,6 +137,15 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Added", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(MainActivity.this,Login.class));
+                finish();
             }
         });
     }
