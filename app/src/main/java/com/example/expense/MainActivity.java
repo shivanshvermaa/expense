@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -83,6 +84,20 @@ public class MainActivity extends AppCompatActivity {
         tb.add( togglePersonal );
         tb.add( toggleLend );
         tb.add( toggleMisc );
+
+//        toggleFood.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if( toggleFood.isChecked())
+//                {
+//                    toggleFood.setTextColor(Color.parseColor("#00b4d8"));
+//                }
+//                else
+//                {
+//                    toggleFood.setTextColor(Color.parseColor("#FFFFFF"));
+//                }
+//            }
+//        });
 
         addExpense.setOnClickListener(new View.OnClickListener() {
             @Override

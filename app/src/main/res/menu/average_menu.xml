@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/average_menu_daily"
+        android:title="Daily"
+        android:icon="@drawable/ic_dollarsign"/>
+
+        <item
+            android:id="@+id/average_menu_monthly"
+            android:title="Monthly"
+            android:icon="@drawable/ic_dollarsign"/>
+
+        <item
+            android:id="@+id/average_menu_yearly"
+            android:title="Yearly"
+            android:icon="@drawable/ic_dollarsign"/>
+    </group>
+
+</menu>
