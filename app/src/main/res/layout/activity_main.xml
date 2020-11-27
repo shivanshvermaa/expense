@@ -25,6 +25,7 @@
         app:layout_constraintVertical_bias="0.188" />
 
 
+
     <EditText
         android:id="@+id/main_expense_amount"
         android:layout_width="wrap_content"
@@ -316,14 +317,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.824" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/main_expense_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:navigationIcon="@drawable/ic_menu" />
+    <Button
+        android:id="@+id/main_navigation_button"
+        android:layout_width="126dp"
+        android:layout_height="64dp"
+        android:background="@drawable/custom_button2"
+        android:text="navigation page"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

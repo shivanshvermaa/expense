@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button addExpense ;
     Button logout;
+    Button navigationSwitch;
 
     EditText amount;
     EditText notes;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         amount= findViewById(R.id.main_expense_amount);
         notes= findViewById(R.id.main_expense_notes);
         addExpense = findViewById(R.id.main_expense_add);
+        navigationSwitch = findViewById(R.id.main_navigation_button);
 
         toggleFood= (ToggleButton)findViewById(R.id.main_expense_food);
         toggleTravel= (ToggleButton)findViewById(R.id.main_expense_travel);
@@ -98,6 +100,14 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //            }
 //        });
+
+
+        navigationSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent( MainActivity.this,Navigation.class));
+            }
+        });
 
         addExpense.setOnClickListener(new View.OnClickListener() {
             @Override
